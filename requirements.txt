@@ -1,0 +1,2 @@
+google-cloud-vision
+Django==3.1.1

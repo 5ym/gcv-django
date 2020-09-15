@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  gcv:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - docker_default
+      - default
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/usr/src/app/key.json
+
+networks:
+  docker_default:
+    external: true
+    name: docker_default
