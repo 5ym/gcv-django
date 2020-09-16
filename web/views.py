@@ -22,7 +22,7 @@ class index(View):
                         word_text = ''.join([
                             symbol.text for symbol in word.symbols
                         ])
-                        con += 'Word text: {} (confidence: {})'.format(word_text, word.confidence)
+                        con += '\n\nWord text: {} (confidence: {})'.format(word_text, word.confidence)
                         for symbol in word.symbols:
                             con += '\nSymbol: {} (confidence: {})'.format(symbol.text, symbol.confidence)
         context = {
