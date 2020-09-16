@@ -1,4 +1,4 @@
-# gcv-python
+# gcv-django
 djangoでGCVの機能検証用に作成した。
 
 ## 開発環境
